@@ -33,7 +33,7 @@ const Sidebar = () => {
         justifyContent: { sm: "center", md: "start" },
       }}
     >
-      <Box position="fixed">
+      <Box position="fixed" sx={{ width: "10%" }}>
         <List>
           {/* Homepage */}
           <ListItem disablePadding>
@@ -100,7 +100,7 @@ const Sidebar = () => {
           </ListItem>
           {/* Switch */}
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#">
+            <ListItemButton component="div">
               <ListItemIcon>
                 <ModeNight />
               </ListItemIcon>
