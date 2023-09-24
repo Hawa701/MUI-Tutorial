@@ -11,7 +11,7 @@ import {
   Menu,
   MenuItem,
 } from "@mui/material";
-import { Email, Notifications, Facebook } from "@mui/icons-material";
+import { Email, Notifications, Forum } from "@mui/icons-material";
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
@@ -38,9 +38,9 @@ const Navbar = () => {
     <AppBar position="sticky">
       <StyledToolbar>
         <Typography variant="h5" sx={{ display: { xs: "none", sm: "block" } }}>
-          Facebook
+          AniChat
         </Typography>
-        <Facebook sx={{ display: { xs: "block", sm: "none" }, fontSize: 40 }} />
+        <Forum sx={{ display: { xs: "block", sm: "none" }, fontSize: 40 }} />
 
         <StyledSearch>
           <InputBase placeholder="Search here..." />
