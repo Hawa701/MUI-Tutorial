@@ -13,9 +13,9 @@ import {
 import { Favorite, FavoriteBorder, MoreVert, Share } from "@mui/icons-material";
 import { red } from "@mui/material/colors";
 
-const Post = ({ postTitle, postDate }) => {
+const Post = ({ postTitle, postDate, postPic, postDescription }) => {
   return (
-    <Card sx={{ marginBottom: 5 }}>
+    <Card sx={{ mb: 5 }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -30,17 +30,10 @@ const Post = ({ postTitle, postDate }) => {
         title={postTitle}
         subheader={postDate}
       />
-      <CardMedia
-        component="img"
-        height="20%"
-        image="/static/images/cards/paella.jpg"
-        alt={postTitle}
-      />
+      <CardMedia component="img" height="20%" image={postPic} alt={postTitle} />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the
-          mussels, if you like.
+          {postDescription}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>

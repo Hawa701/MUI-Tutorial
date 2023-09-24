@@ -25,7 +25,14 @@ const responsiveStyle = {
 
 const Sidebar = () => {
   return (
-    <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+    <Box
+      flex={1}
+      p={2}
+      sx={{
+        display: { xs: "none", sm: "block" },
+        justifyContent: { sm: "center", md: "start" },
+      }}
+    >
       <Box position="fixed">
         <List>
           {/* Homepage */}
