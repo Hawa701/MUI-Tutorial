@@ -11,7 +11,7 @@ import {
   Menu,
   MenuItem,
 } from "@mui/material";
-import { Nightlife, Email, Notifications } from "@mui/icons-material";
+import { Email, Notifications, Facebook } from "@mui/icons-material";
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
@@ -32,15 +32,15 @@ const StyledIcons = styled(Box)((theme) => ({
 }));
 
 const Navbar = () => {
-  const [open, setOpen] = useState("false");
+  const [open, setOpen] = useState(false);
 
   return (
     <AppBar position="sticky">
       <StyledToolbar>
-        <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
-          Interact
+        <Typography variant="h5" sx={{ display: { xs: "none", sm: "block" } }}>
+          Facebook
         </Typography>
-        <Nightlife sx={{ display: { xs: "block", sm: "none" } }} />
+        <Facebook sx={{ display: { xs: "block", sm: "none" }, fontSize: 40 }} />
 
         <StyledSearch>
           <InputBase placeholder="Search here..." />
